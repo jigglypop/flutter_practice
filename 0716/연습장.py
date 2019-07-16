@@ -1,11 +1,4 @@
 
-# 3
-# 10 2 + 3 4 + * .
-# 5 3 * + .
-# 1 5 8 10 3 4 + + 3 + * 2 + + + .
-
-
-
 T = int(input())
 for tc in range(1, T+1):
     m = list(input().split())
@@ -16,6 +9,7 @@ for tc in range(1, T+1):
         '*': lambda x, y: x * y,
         '/': lambda x, y: x // y,
     }
+
     for i in m:
         if i == '.':
             if len(Q) > 1:
@@ -34,3 +28,12 @@ for tc in range(1, T+1):
         else:
             Q.append(i)
     print(f'#{tc} {a}')
+    
+        
+
+        
+
+
+
+
+    #print("#{0} {1}".format(tc, a))
