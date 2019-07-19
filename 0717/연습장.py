@@ -1,15 +1,6 @@
-def P(w):
-
-    Q = []
-    S = []
-
-    for x in w:
-        if x.isalpha():
-            Q.append(x.lower())
-            S.append(x.lower())        
-    while Q:
-        if Q.pop(0) != S.pop():
-            return False
-    return True
-
-print(P('wow'))
+T= int(input())
+m = []
+for tc in range(1, T+1):
+	N, M = map(int, input().split())
+	m += [list(map(int, input().split())) for _ in range(M)]
+    print(m)
